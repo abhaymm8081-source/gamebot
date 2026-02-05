@@ -1,7 +1,7 @@
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
-TOKEN =os.getenv("8016672930:AAE9oeDbf08ISz85ubvNMhea89nkKBpzt0Q")
+TOKEN =os.getenv("TOKEN")
 questions = [
     {"q":"भारत की राजधानी क्या है?", "options":["Delhi","Mumbai","Chennai","Kolkata"], "ans":"Delhi"},
     {"q":"2+5 कितना होता है?", "options":["5","7","9","10"], "ans":"7"},
@@ -49,6 +49,7 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
 
 app.run_polling()
+
 
 
 
