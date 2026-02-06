@@ -2,8 +2,7 @@ import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 Name = BOT_TOKEN
-Value = (8016672930:AAGsUSTzRTf3oIWUEaqZxB_wEcGSioi7qVg)
-
+Value=8016672930:AAGoD15ahkbgrM6J3acMYKnw2VVZPvf8zlg
 TOKEN =os.getenv("BOT_TOKEN")
 questions = [
     {"q":"भारत की राजधानी क्या है?", "options":["Delhi","Mumbai","Chennai","Kolkata"], "ans":"Delhi"},
@@ -52,6 +51,7 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
 
 app.run_polling()
+
 
 
 
